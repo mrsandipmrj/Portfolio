@@ -1,12 +1,21 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-
-
+const sendEmail = () =>{
+  Email.send({
+  Host : "smtp.gmail.com",
+  Username : "testmailofsky@gmail.com",
+  Password : "skysky@@",
+  To : 'yadavsandeep1472@gmail.com',
+  From : document.getElementById("user-email").value,
+  Subject : "Portfolio Mail",
+  Body : "And this is the body",
+}).then(
+message => alert(message)
+);
+}
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -56,3 +65,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
