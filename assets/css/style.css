@@ -1,31 +1,43 @@
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors gradient */
 
-  --bg-gradient-onyx: linear-gradient(to bottom right,
-      hsl(240, 1%, 25%) 3%,
-      hsl(0, 0%, 19%) 97%);
-  --bg-gradient-jet: linear-gradient(to bottom right,
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+      to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(to bottom right,
-      hsl(45, 100%, 71%) 0%,
-      hsla(36, 100%, 69%, 0) 50%);
-  --bg-gradient-yellow-2: linear-gradient(135deg,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+      135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(to bottom right,
-      hsl(0, 0%, 25%) 0%,
-      hsla(0, 0%, 25%, 0) 50%);
-  --text-gradient-yellow: linear-gradient(to right,
-      hsl(45, 100%, 72%),
-      hsl(35, 100%, 68%));
+      hsla(35, 100%, 68%, 0) 59.86%
+    ),
+    hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  );
 
   /* solid */
 
@@ -42,13 +54,8 @@
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
-
-
-
-
+  --ff-poppins: "Poppins", sans-serif;
 
   /**
    * shadow
@@ -66,12 +73,7 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -134,10 +136,6 @@ html {
 body {
   background: var(--smoky-black);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -289,10 +287,6 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -302,10 +296,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -450,14 +440,9 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover {
   color: var(--light-gray);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #NAVBAR
@@ -500,10 +485,6 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -522,8 +503,6 @@ main {
 .about-text p {
   margin-bottom: 15px;
 }
-
-
 
 /**
  * #service
@@ -584,8 +563,6 @@ main {
   line-height: 1.6;
 }
 
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -593,7 +570,6 @@ main {
 .article-title {
   margin-bottom: 30px;
 }
-
 
 /**
  * education
@@ -609,7 +585,6 @@ main {
   gap: 15px;
   margin-bottom: 25px;
 }
-
 
 .timeline-list {
   font-size: 14px;
@@ -658,16 +633,18 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 #present::after {
-background:rgb(20, 165, 20);
-box-shadow: 0 0 0 6px rgba(0, 128, 0, 0.322);
-
+  background: rgb(20, 165, 20);
+  box-shadow: 0 0 0 6px rgba(0, 128, 0, 0.322);
 }
 .timeline-text {
   color: var(--light-gray);
   font-weight: 300;
   line-height: 1.6;
 }
-
+a {
+  text-decoration: none;
+  color: var(--white-2);
+}
 
 /**
  * skills
@@ -680,7 +657,6 @@ box-shadow: 0 0 0 6px rgba(0, 128, 0, 0.322);
 .skills-list {
   padding: 20px;
 }
-
 
 .skills-item:not(:last-child) {
   margin-bottom: 15px;
@@ -711,11 +687,6 @@ box-shadow: 0 0 0 6px rgba(0, 128, 0, 0.322);
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -844,31 +815,20 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
-
-
-
-
 
 /**
  * responsive larger than 580px screen
  */
 
 @media (min-width: 580px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * typography
      */
@@ -880,10 +840,7 @@ textarea.form-input::-webkit-resizer {
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-
   }
-
-
 
   /**
    * #REUSED STYLE
@@ -913,8 +870,6 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
-
-
   /**
    * #MAIN
    */
@@ -923,8 +878,6 @@ textarea.form-input::-webkit-resizer {
     margin-top: 60px;
     margin-bottom: 100px;
   }
-
-
 
   /**
    * #SIDEBAR
@@ -988,8 +941,6 @@ textarea.form-input::-webkit-resizer {
     width: calc(100% - 64px);
   }
 
-
-
   /**
    * #NAVBAR
    */
@@ -1005,8 +956,6 @@ textarea.form-input::-webkit-resizer {
   .navbar-link {
     --fs-8: 14px;
   }
-
-
 
   /**
    * #ABOUT
@@ -1039,7 +988,6 @@ textarea.form-input::-webkit-resizer {
     text-align: left;
   }
 
-
   /**
    * #RESUME
    */
@@ -1061,8 +1009,6 @@ textarea.form-input::-webkit-resizer {
   .skills-item:not(:last-child) {
     margin-bottom: 25px;
   }
-
-
 
   /**
    * #CONTACT
@@ -1094,19 +1040,13 @@ textarea.form-input::-webkit-resizer {
   .form-btn ion-icon {
     font-size: 18px;
   }
-
 }
-
-
-
-
 
 /**
  * responsive larger than 768px screen
  */
 
 @media (min-width: 768px) {
-
   /**
    * REUSED STYLE
    */
@@ -1120,8 +1060,6 @@ textarea.form-input::-webkit-resizer {
     width: 100px;
   }
 
-
-
   /**
    * SIDEBAR
    */
@@ -1131,8 +1069,6 @@ textarea.form-input::-webkit-resizer {
     gap: 30px 15px;
   }
 
-
-
   /**
    * NAVBAR
    */
@@ -1141,18 +1077,9 @@ textarea.form-input::-webkit-resizer {
     --fs-8: 15px;
   }
 
-
-
   /**
    * ABOUT
    */
-
-
-
-
-
-
-
 
   /**
    * CONTACT
@@ -1166,25 +1093,18 @@ textarea.form-input::-webkit-resizer {
     width: max-content;
     margin-left: auto;
   }
-
 }
-
-
-
-
 
 /**
  * responsive larger than 1024px screen
  */
 
 @media (min-width: 1024px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
     * shadow
     */
@@ -1192,10 +1112,7 @@ textarea.form-input::-webkit-resizer {
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1206,8 +1123,6 @@ textarea.form-input::-webkit-resizer {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
-
-
 
   /**
    * MAIN
@@ -1222,8 +1137,6 @@ textarea.form-input::-webkit-resizer {
     width: max-content;
     margin: auto;
   }
-
-
 
   /**
    * NAVBAR
@@ -1250,8 +1163,6 @@ textarea.form-input::-webkit-resizer {
     font-weight: 500;
   }
 
-
-
   /**
    * ABOUT
    */
@@ -1263,13 +1174,11 @@ textarea.form-input::-webkit-resizer {
     gap: 20px 25px;
   }
 
-
   /**
  * responsive larger than 1250px screen
  */
 
   @media (min-width: 1250px) {
-
     /**
    * RESET
    */
@@ -1286,7 +1195,8 @@ textarea.form-input::-webkit-resizer {
       border: 5px solid var(--smoky-black);
       background: hsla(0, 0%, 100%, 0.1);
       border-radius: 20px;
-      box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+      box-shadow:
+        inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
         inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
     }
 
@@ -1297,8 +1207,6 @@ textarea.form-input::-webkit-resizer {
     body::-webkit-scrollbar-button {
       height: 60px;
     }
-
-
 
     /**
    * REUSED STYLE
@@ -1312,8 +1220,6 @@ textarea.form-input::-webkit-resizer {
     article {
       min-height: 100%;
     }
-
-
 
     /**
    * MAIN
@@ -1333,8 +1239,6 @@ textarea.form-input::-webkit-resizer {
       width: 75%;
       margin: 0;
     }
-
-
 
     /**
    * SIDEBAR
@@ -1401,8 +1305,6 @@ textarea.form-input::-webkit-resizer {
       justify-content: center;
     }
 
-
-
     /**
 	 * RESUME
 	 */
@@ -1410,6 +1312,5 @@ textarea.form-input::-webkit-resizer {
     .timeline-text {
       max-width: 700px;
     }
-
   }
 }
